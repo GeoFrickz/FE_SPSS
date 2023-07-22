@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forgot Password</title>
-    <link rel="stylesheet" href="forget.css">
+    <title>Twibbon</title>
+    <link rel="stylesheet" href="twibbonStatistik.css">
     <link rel="icon" href="/resources/Logo/logo.png">
 </head>
 <body>
@@ -15,25 +15,37 @@
         <a class="nav-main" id="nav-2" href="">Lomba Infografis</a>
         <a class="nav-main" id="nav-3" href="">Lomba Esai</a>
         <div id="nav-reglog">
-            <a href="">Register</a>
-            <a href="">Log in</a>
+            <a href="">Nama lengkap peserta</a>
+            <div id="icon">
+                <div id="head"></div>
+                <div id="body"></div>
+            </div>
         </div>
     </nav>
 
-    <div id="container">
-        <h1>Forget pass..</h1>
-        <div id="content">
-            <img id="welcome-img" src="/resources/Fintech broken.png" alt="">
-            <form action="" id="content-form">
-                <p class="bold">Kami akan kirimkan konfirmasi ke email anda untuk menyetel ulang password anda</p>
-                <div class="register-input">
-                    <label for="email">Email Address</label>
-                    <input type="email" name="email" placeholder="Enter your email address">
-                    <img class="normal-img" src="/resources/1.png" alt="">
+    <div id="content">
+        <h1>Twibbon!</h1>
+        <div id="content-fill">
+            <img src="/resources/twb.png" alt="">
+            <div id="content-text">
+                <div>
+                    <p><b>Perhatian!</b></p>
+                    <p>Silakan download template twibbon dengan menekan tombol dibawah ini. Kemudian upload ke instagram kalian.</p>
                 </div>
-                <p class="bold">Remember? <a class="blue" href="">Login now!</a></p>
-                <button type="submit">Send</button>
-            </form>
+                <a id="download-button" href="/resources/twb.png" download><p>Download</p></a>
+                <form id="content-form" action="">
+                    <div id="form-bukti">
+                        <div>
+                            <label for="">Unggah Bukti Twibbon</label>
+                            <p>(.jpg, .png, .jpeg)</p>
+                        </div>
+                        <input id="bukti-button" type="file" accept="image/*" required>
+                        <p id="file-selected-message" style="display: none;">File selected: <span id="file-name"></span></p>
+                    <button id="upload-bukti">Upload</button>
+                    </div>
+                    <button id="form-send" type="submit" disabled>Send</button>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -69,5 +81,5 @@
         </div>
     </footer>
 </body>
-<script type="text/javascript" src="forget.js"></script>
+<script type="text/javascript" src="twibbonStatistik.js"></script>
 </html>

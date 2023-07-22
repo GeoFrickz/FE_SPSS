@@ -38,15 +38,16 @@ body{
 .nav-main{
     color:rgba(143,143,143,1);
     transition: color .2s ease-in-out;
-    font-weight:700;
+    font-weight: 600;
 }
 
 #nav-1 {
-    background: linear-gradient(92.85deg, #8EB8BB -1.41%, #9975AA 37.87%, #6968AF 91.69%);
+    background: linear-gradient(151deg, #37797D 0%, #7517A2 49.76%, #2A296D 100%);
     background-size: 200% 200%;
     animation: rainbow 1.5s ease-in-out infinite;
     background-clip: text;
     -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
 }
 
 #nav-2 {
@@ -148,7 +149,7 @@ nav img{
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.11em;
-    color: #420143;
+    color: #750046;
 }
 
 #content .register-input .normal-img{
@@ -177,6 +178,7 @@ nav img{
 
 .bold{
     font-weight: 700;
+    color: #575757;
 }
 
 #content-form button{

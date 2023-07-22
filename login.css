@@ -38,15 +38,16 @@ body{
 .nav-main{
     color:rgba(143,143,143,1);
     transition: color .2s ease-in-out;
-    font-weight:700;
+    font-weight: 600;
 }
 
 #nav-1 {
-    background: linear-gradient(92.85deg, #8EB8BB -1.41%, #9975AA 37.87%, #6968AF 91.69%);
+    background: linear-gradient(151deg, #37797D 0%, #7517A2 49.76%, #2A296D 100%);
     background-size: 200% 200%;
     animation: rainbow 1.5s ease-in-out infinite;
     background-clip: text;
     -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
 }
 
 #nav-2 {
@@ -144,7 +145,7 @@ nav img{
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.11em;
-    color: #420143;
+    color: #750046;
 }
 
 #content .register-input .normal-img{
@@ -167,12 +168,13 @@ nav img{
     border-image-source: linear-gradient(92.28deg, rgba(156, 166, 255, 0.49) 8.69%, rgba(0, 14, 145, 0.33) 54.66%, rgba(59, 59, 61, 0) 91.95%);
 }
 
-.blue{
-    color: #0082FB;
-}
-
 .bold{
     font-weight: 700;
+    color: #575757;
+}
+
+.blue{
+    color: #0082FB;
 }
 
 #content-form button{
