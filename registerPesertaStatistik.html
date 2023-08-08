@@ -28,13 +28,15 @@
         <form action="">
             <div class="content-top">
                 <div class="card">
-                    <h2>Ketua</h2>
+                    <h2>Anggota 1</h2>
                     <label for="">Full name</label>
                     <input type="text" value="Nama panjang ketua (dari db)" readonly required>
                     <label for="">Jurusan</label>
                     <input type="text" placeholder="Jurusan" required>
                     <label for="">Nomor Telepon</label>
-                    <input type="tel" placeholder="Nomor WhatsApp" required>
+                    <input type="tel" value="Nomor WhatsApp ketua (dari db)" readonly required>
+                    <label for="">ID Line</label>
+                    <input type="text" placeholder="ID Line (Opsional)" required>
                 </div>
                 <div class="card">
                     <h2>Anggota 2</h2>
@@ -44,28 +46,44 @@
                     <input type="text" placeholder="Jurusan" required>
                     <label for="">Nomor Telepon</label>
                     <input type="tel" placeholder="Nomor WhatsApp" required>
+                    <label for="">ID Line</label>
+                    <input type="text" placeholder="ID Line (Opsional)" required>
                 </div>
                 <div class="card">
-                    <h2>Ketua</h2>
+                    <h2>Anggota 3</h2>
                     <label for="">Full name</label>
                     <input type="text" placeholder="Nama panjang" required>
                     <label for="">Jurusan</label>
                     <input type="text" placeholder="Jurusan" required>
                     <label for="">Nomor Telepon</label>
                     <input type="tel" placeholder="Nomor WhatsApp" required>
+                    <label for="">ID Line</label>
+                    <input type="text" placeholder="ID Line (Opsional)" required>
                 </div>
             </div>
             <div class="content-bot">
                 <div class="card">
-                    <label for="">Nama tim</label>
-                    <input type="text" placeholder="Nama tim" required>
+                    <label for="">KTM (Kartu Tanda Mahasiswa)</label>
+                    <input id="bukti-button1" type="file" accept="image/*" name="Peserta1_KTM" required>
+                    <p id="file-selected-message1" style="display: none;">File selected: <span id="file-name1"></span></p>
+                    <button class="upload-bukti" id="upload-bukti1" type="button">Upload</button>
                 </div>
+                
                 <div class="card">
                     <label for="">KTM (Kartu Tanda Mahasiswa)</label>
-                    <input type="file" accept="image/*" required>
+                    <input id="bukti-button2" type="file" accept="image/*" name="Peserta2_KTM" required>
+                    <p id="file-selected-message2" style="display: none;">File selected: <span id="file-name2"></span></p>
+                    <button class="upload-bukti" id="upload-bukti2" type="button">Upload</button>
                 </div>
-                <button type="submit">Next</button>
+                
+                <div class="card">
+                    <label for="">KTM (Kartu Tanda Mahasiswa)</label>
+                    <input id="bukti-button3" type="file" accept="image/*" name="Peserta3_KTM" required>
+                    <p id="file-selected-message3" style="display: none;">File selected: <span id="file-name3"></span></p>
+                    <button class="upload-bukti" id="upload-bukti3" type="button">Upload</button>
+                </div>
             </div>
+            <button id="submit-button" type="submit">Register</button>
         </form>
     </div>
     
