@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url("/resources/Background.png");
+    background-size: cover;
+}
+
+/* NAVBAR */
+
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgba(249, 249, 249, 0.5);
+    box-shadow: 0px 7px 39px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease-in-out;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+#navbar.hidden{
+    transform: translateY(-80px);
+}
+
+.nav-main{
+    color:rgba(143,143,143,1);
+    transition: color .2s ease-in-out;
+    font-weight: 600;
+}
+
+#nav-1{
+    background: linear-gradient(92.85deg, #8EB8BB -1.41%, #9975AA 37.87%, #6968AF 91.69%);
+    background-size: 200% 200%;
+    animation: rainbow 1.5s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip:text;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#nav-2{
+    background: linear-gradient(89.82deg, #C5A687 0.14%, #BA7A76 50.2%, #B16898 92.49%);
+    background-size: 200% 200%;
+    animation: rainbow 1.5s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip:text;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#nav-3{
+    background: linear-gradient(89.82deg, #624185 0.10%, #458FFF 40.2%, #FF45C0 60.49%);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color: transparent;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#nav-1:hover, #nav-2:hover, #nav-3:hover{
+    color: rgba(0, 0, 0, 0);
+}
+
+@keyframes rainbow{ 
+    0%{background-position:left}
+    50%{background-position:right}
+    100%{background-position:left}
+}
+
+nav img{
+    width: 45px;
+}
+
+#nav-user{
+    display: flex;
+    align-items: center;
+}
+
+#nav-user p{
+    margin-right: 15px; 
+    text-align: right;
+}
+
+#nav-user img{
+    width: 20px; 
+    height: 33px; 
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+
+/* CONTENT */
+
+#container{
+    margin: 60px auto;
+    padding: 2.5%;
+    max-width: 1000px;
+    border-radius: 50px;
+    background-color: #FFFF;
+    mix-blend-mode: normal;
+    box-shadow: -2px 0px 20px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+#container h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+#ketentuan-text{
+    text-align: justify;
+    display: flex;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 40px;
+    margin-right: 30px;
+} 
+
+#banner-container{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#banner-image{
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+#countdown-pendaftaran-olim, #countdown-pendaftaran-info, #countdown-pendaftaran-esai{
+    text-align: center;
+    font-weight: bold;
+    font-size: 55px;
+    margin-top: 50px;
+}
+
+#additional-text{
+    text-align: center;
+    font-style: italic;
+}
+
+#container-timeline-olim{
+    margin: 40px auto 20px auto;
+    position: relative;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    mix-blend-mode: normal;
+    overflow: hidden;
+    border-radius: 50px;
+    width: 80%;
+}
+
+#container-timeline{
+    margin: 5px auto 0px auto;
+    position: relative;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    mix-blend-mode: normal;
+    overflow: hidden;
+    border-radius: 50px;
+    width: 80%;
+    height: 420px;
+}
+
+#timeline-olim-image{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: -100px;
+    margin-bottom: -100px;
+    margin-left: 90px;
+}
+
+#timeline-esai-image, #timeline-info-image{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 50px;
+}
+
+#about-text{
+    text-align: center;
+    display: flex;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 15px;
+    margin-left: 90px;
+    margin-right: 90px;
+} 
+
+#buttons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#buttons-container a{
+    margin: 0 10px; 
+    padding: 10px 20px;
+    font-weight: 700;
+    letter-spacing: 0.065em;
+    color: #f9f9f9;
+    background: linear-gradient(90deg, rgba(204, 3, 100, 1), rgba(100, 3, 38, 1));
+    border: none;
+    border-radius: 46px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(95.32deg, rgba(162, 162, 162, 0.5) 23.77%, rgba(207, 207, 207, 0.5) 71.08%);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    padding: 2.5%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+#himstat p{
+    padding-left: 20px;
+}
+
+#himstat{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 50px;
+    width: 50%;
+}
+
+footer h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    padding-left: 20px;
+}
+
+#himstat-info{
+    display: flex;
+}
+
+#cp{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+    width: 50%;
+}
+
+#media, #contact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#media h3, #contact h3{
+    transform: translate(-10px, 0);
+}
+
+#contact-info{
+    display: flex;
+    align-items: center
+}
+
+@media screen and (max-width: 768px){
+    #navbar{
+        height: 80px;
+        padding: 10px;
+    }
+
+    nav img{
+        width: 30px;
+    }
+
+    #container{
+        width: 90%;
+    }
+
+    #container h1{
+        font-size: 25px;
+    }
+
+    #about-text, #ketentuan-text{
+        font-size: 15px;
+    }
+
+    #register-top{
+        bottom: 55px;
+        left: 45px; 
+    }
+  
+    #register-top button{
+        width: 120px; 
+        height: 40px; 
+        font-size: 15px; 
+    }
+
+    #container-timeline{
+        flex-direction: column; 
+    }
+
+    #timeline-image{
+        max-width: 90%; 
+        margin-left: 0; 
+    }
+
+    .banner-bottom{
+        margin-bottom: -1.0%;
+    }
+
+    #register-bottom{
+        bottom: 40px;
+    }
+  
+    #register-bottom button{
+        width: 120px; 
+        height: 40px; 
+        font-size: 15px; 
+    } 
+
+    #footer{
+        display: flex;
+        justify-content: center; 
+        padding: 20px;
+    }
+
+    footer h3{
+        margin-top: 20px;
+    }
+
+    #media-img, #contact-info{
+        margin-bottom: 5px;
+        margin-left: 3px;
+    }
+
+    #himstat, #cp{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    } 
+  
+    #cp{
+        flex-direction: column; 
+    }
+}
